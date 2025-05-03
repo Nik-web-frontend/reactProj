@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-
+import Header from './components/Header'
 const App = () => {
 
 
@@ -11,7 +11,10 @@ const App = () => {
   }
   let [first, setfirst] = useState('')
   return (
+
     <div>
+      <Header/>
+      
       <form onSubmit={sub}>
         <input type="text"  value={first} onChange={(e)=>{
           setfirst(e.target.value)
