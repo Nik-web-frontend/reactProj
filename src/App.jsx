@@ -6,7 +6,7 @@ const App = () => {
   function sub(e){
     e.preventDefault()
 
-    console.log(first)
+    console.log(first,'submitted')
     setfirst('')
   }
   let [first, setfirst] = useState('')
